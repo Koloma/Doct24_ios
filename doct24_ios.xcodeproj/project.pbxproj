@@ -16,6 +16,19 @@
 		20223AB627550100009E5864 /* doct24_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20223AB527550100009E5864 /* doct24_iosTests.swift */; };
 		20223AC027550100009E5864 /* doct24_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20223ABF27550100009E5864 /* doct24_iosUITests.swift */; };
 		20223AC227550100009E5864 /* doct24_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20223AC127550100009E5864 /* doct24_iosUITestsLaunchTests.swift */; };
+		20223AD6275504BF009E5864 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20223AD5275504BF009E5864 /* BaseRouter.swift */; };
+		20223AD8275504EA009E5864 /* UIWindow+keyWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20223AD7275504EA009E5864 /* UIWindow+keyWindow.swift */; };
+		20223ADA2755050E009E5864 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20223AD92755050E009E5864 /* BaseCoordinator.swift */; };
+		20223ADC2755053B009E5864 /* UIStoryboard+Instantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20223ADB2755053B009E5864 /* UIStoryboard+Instantiate.swift */; };
+		20223ADE27550588009E5864 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20223ADD27550588009E5864 /* AppCoordinator.swift */; };
+		20223AE0275505BD009E5864 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20223ADF275505BD009E5864 /* UserManager.swift */; };
+		20223AE227550623009E5864 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20223AE127550623009E5864 /* User.swift */; };
+		20223AE427550830009E5864 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20223AE327550830009E5864 /* MainCoordinator.swift */; };
+		20223AE6275509D1009E5864 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20223AE5275509D1009E5864 /* Auth.storyboard */; };
+		20223AE8275509F1009E5864 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20223AE7275509F1009E5864 /* AuthViewController.swift */; };
+		20223AEA27550A14009E5864 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20223AE927550A14009E5864 /* AuthCoordinator.swift */; };
+		20223AEC27550A78009E5864 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20223AEB27550A78009E5864 /* RegistrationViewController.swift */; };
+		20223AEE27550AA6009E5864 /* RecoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20223AED27550AA6009E5864 /* RecoverViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +62,19 @@
 		20223ABB27550100009E5864 /* doct24_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = doct24_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20223ABF27550100009E5864 /* doct24_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doct24_iosUITests.swift; sourceTree = "<group>"; };
 		20223AC127550100009E5864 /* doct24_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doct24_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		20223AD5275504BF009E5864 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		20223AD7275504EA009E5864 /* UIWindow+keyWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+keyWindow.swift"; sourceTree = "<group>"; };
+		20223AD92755050E009E5864 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		20223ADB2755053B009E5864 /* UIStoryboard+Instantiate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Instantiate.swift"; sourceTree = "<group>"; };
+		20223ADD27550588009E5864 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		20223ADF275505BD009E5864 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		20223AE127550623009E5864 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		20223AE327550830009E5864 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		20223AE5275509D1009E5864 /* Auth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		20223AE7275509F1009E5864 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		20223AE927550A14009E5864 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		20223AEB27550A78009E5864 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		20223AED27550AA6009E5864 /* RecoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +133,8 @@
 				20223AA727550100009E5864 /* Assets.xcassets */,
 				20223AA927550100009E5864 /* LaunchScreen.storyboard */,
 				20223AAC27550100009E5864 /* Info.plist */,
+				20223ADD27550588009E5864 /* AppCoordinator.swift */,
+				20223ADF275505BD009E5864 /* UserManager.swift */,
 			);
 			path = doct24_ios;
 			sourceTree = "<group>";
@@ -149,6 +177,7 @@
 			children = (
 				20223AA2275500FE009E5864 /* MainViewController.swift */,
 				20223AA4275500FE009E5864 /* Main.storyboard */,
+				20223AE327550830009E5864 /* MainCoordinator.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -165,6 +194,10 @@
 		20223AD2275503B8009E5864 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				20223AD5275504BF009E5864 /* BaseRouter.swift */,
+				20223AD7275504EA009E5864 /* UIWindow+keyWindow.swift */,
+				20223AD92755050E009E5864 /* BaseCoordinator.swift */,
+				20223ADB2755053B009E5864 /* UIStoryboard+Instantiate.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -172,6 +205,7 @@
 		20223AD3275503C5009E5864 /* DataBase */ = {
 			isa = PBXGroup;
 			children = (
+				20223AE127550623009E5864 /* User.swift */,
 			);
 			path = DataBase;
 			sourceTree = "<group>";
@@ -179,6 +213,11 @@
 		20223AD4275503D1009E5864 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				20223AE5275509D1009E5864 /* Auth.storyboard */,
+				20223AE7275509F1009E5864 /* AuthViewController.swift */,
+				20223AE927550A14009E5864 /* AuthCoordinator.swift */,
+				20223AEB27550A78009E5864 /* RegistrationViewController.swift */,
+				20223AED27550AA6009E5864 /* RecoverViewController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -287,6 +326,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20223AE6275509D1009E5864 /* Auth.storyboard in Resources */,
 				20223AAB27550100009E5864 /* LaunchScreen.storyboard in Resources */,
 				20223AA827550100009E5864 /* Assets.xcassets in Resources */,
 				20223AA6275500FE009E5864 /* Main.storyboard in Resources */,
@@ -314,9 +354,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20223AE0275505BD009E5864 /* UserManager.swift in Sources */,
+				20223AEA27550A14009E5864 /* AuthCoordinator.swift in Sources */,
+				20223AD8275504EA009E5864 /* UIWindow+keyWindow.swift in Sources */,
+				20223ADA2755050E009E5864 /* BaseCoordinator.swift in Sources */,
+				20223AEC27550A78009E5864 /* RegistrationViewController.swift in Sources */,
 				20223AA3275500FE009E5864 /* MainViewController.swift in Sources */,
+				20223AE8275509F1009E5864 /* AuthViewController.swift in Sources */,
 				20223A9F275500FE009E5864 /* AppDelegate.swift in Sources */,
+				20223AEE27550AA6009E5864 /* RecoverViewController.swift in Sources */,
+				20223AE427550830009E5864 /* MainCoordinator.swift in Sources */,
+				20223ADE27550588009E5864 /* AppCoordinator.swift in Sources */,
 				20223AA1275500FE009E5864 /* SceneDelegate.swift in Sources */,
+				20223AD6275504BF009E5864 /* BaseRouter.swift in Sources */,
+				20223AE227550623009E5864 /* User.swift in Sources */,
+				20223ADC2755053B009E5864 /* UIStoryboard+Instantiate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
