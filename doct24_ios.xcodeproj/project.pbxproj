@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		20223A9F275500FE009E5864 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20223A9E275500FE009E5864 /* AppDelegate.swift */; };
 		20223AA1275500FE009E5864 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20223AA0275500FE009E5864 /* SceneDelegate.swift */; };
-		20223AA3275500FE009E5864 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20223AA2275500FE009E5864 /* ViewController.swift */; };
+		20223AA3275500FE009E5864 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20223AA2275500FE009E5864 /* MainViewController.swift */; };
 		20223AA6275500FE009E5864 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20223AA4275500FE009E5864 /* Main.storyboard */; };
 		20223AA827550100009E5864 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20223AA727550100009E5864 /* Assets.xcassets */; };
 		20223AAB27550100009E5864 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20223AA927550100009E5864 /* LaunchScreen.storyboard */; };
@@ -39,7 +39,7 @@
 		20223A9B275500FE009E5864 /* doct24_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doct24_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20223A9E275500FE009E5864 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20223AA0275500FE009E5864 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		20223AA2275500FE009E5864 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		20223AA2275500FE009E5864 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		20223AA5275500FE009E5864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20223AA727550100009E5864 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20223AAA27550100009E5864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,10 +99,11 @@
 		20223A9D275500FE009E5864 /* doct24_ios */ = {
 			isa = PBXGroup;
 			children = (
-				20223A9E275500FE009E5864 /* AppDelegate.swift */,
-				20223AA0275500FE009E5864 /* SceneDelegate.swift */,
-				20223AA2275500FE009E5864 /* ViewController.swift */,
-				20223AA4275500FE009E5864 /* Main.storyboard */,
+				20223AD3275503C5009E5864 /* DataBase */,
+				20223AD2275503B8009E5864 /* Core */,
+				20223AD1275502B0009E5864 /* System */,
+				20223ACF27550299009E5864 /* Flows */,
+				20223ACE2755028C009E5864 /* Services */,
 				20223AA727550100009E5864 /* Assets.xcassets */,
 				20223AA927550100009E5864 /* LaunchScreen.storyboard */,
 				20223AAC27550100009E5864 /* Info.plist */,
@@ -125,6 +126,61 @@
 				20223AC127550100009E5864 /* doct24_iosUITestsLaunchTests.swift */,
 			);
 			path = doct24_iosUITests;
+			sourceTree = "<group>";
+		};
+		20223ACE2755028C009E5864 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		20223ACF27550299009E5864 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				20223AD4275503D1009E5864 /* Auth */,
+				20223AD0275502A3009E5864 /* Main */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		20223AD0275502A3009E5864 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				20223AA2275500FE009E5864 /* MainViewController.swift */,
+				20223AA4275500FE009E5864 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		20223AD1275502B0009E5864 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				20223A9E275500FE009E5864 /* AppDelegate.swift */,
+				20223AA0275500FE009E5864 /* SceneDelegate.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		20223AD2275503B8009E5864 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		20223AD3275503C5009E5864 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		20223AD4275503D1009E5864 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20223AA3275500FE009E5864 /* ViewController.swift in Sources */,
+				20223AA3275500FE009E5864 /* MainViewController.swift in Sources */,
 				20223A9F275500FE009E5864 /* AppDelegate.swift in Sources */,
 				20223AA1275500FE009E5864 /* SceneDelegate.swift in Sources */,
 			);
@@ -367,7 +423,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -422,7 +478,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
