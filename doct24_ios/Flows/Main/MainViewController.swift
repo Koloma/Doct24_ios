@@ -10,12 +10,20 @@ import UIKit
 class MainViewController: UIViewController {
 
     @IBOutlet weak var headerView: HeaderView!
-    
+    @IBOutlet weak var sliderButton: UIButton!
+    @IBOutlet weak var searchBar: UISearchBar!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        setupView()
     }
 
+    func setupView() {
+
+        sliderButton.layer.cornerRadius = 15
+
+    }
 
 }
 

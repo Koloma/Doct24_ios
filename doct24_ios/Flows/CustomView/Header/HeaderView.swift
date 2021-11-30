@@ -39,9 +39,9 @@ class HeaderView: UIView {
 
 
 
-        countryButton.layer.cornerRadius = countryButton.frame.size.height / 2
-        countryButton.layer.borderWidth = 1
-        countryButton.layer.borderColor = UIColor.gray.cgColor
+//        countryButton.layer.cornerRadius = countryButton.frame.size.height / 2
+//        countryButton.layer.borderWidth = 1
+//        countryButton.layer.borderColor = UIColor.gray.cgColor
 
         addSubview(view)
     }

@@ -230,10 +230,18 @@
 		20223AF32755117C009E5864 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				207675C7275657CF00AF0286 /* Header */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		207675C7275657CF00AF0286 /* Header */ = {
+			isa = PBXGroup;
+			children = (
 				20223AEF27551033009E5864 /* HeaderView.xib */,
 				20223AF12755116B009E5864 /* HeaderView.swift */,
 			);
-			path = CustomView;
+			path = Header;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
