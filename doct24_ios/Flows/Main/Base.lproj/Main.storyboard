@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -14,59 +14,57 @@
             <objects>
                 <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="doct24_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" horizontalHuggingPriority="240" placeholder="Поиск" translatesAutoresizingMaskIntoConstraints="NO" id="dCQ-gy-tgP">
-                                <rect key="frame" x="16" y="104" width="316" height="51"/>
+                                <rect key="frame" x="5" y="70" width="224" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5qd-z9-Szb"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="y1X-YX-LpQ"/>
+                                </constraints>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jat-N9-0ix" customClass="HeaderView" customModule="doct24_ios" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44" width="398" height="60"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="3WM-RJ-4jG"/>
+                                    <constraint firstAttribute="height" constant="60" id="aDO-tl-X0x"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCE-Ta-H18">
-                                <rect key="frame" x="342" y="104" width="56" height="44"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="filterButton" translatesAutoresizingMaskIntoConstraints="NO" id="wli-nf-7XT">
+                                <rect key="frame" x="239" y="63.5" width="65" height="63"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="RvV-Zv-a83"/>
-                                    <constraint firstAttribute="width" constant="56" id="ny7-qq-Nqm"/>
+                                    <constraint firstAttribute="width" constant="65" id="Twy-g6-c7A"/>
+                                    <constraint firstAttribute="height" constant="63" id="dV7-pJ-RjT"/>
                                 </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="buttonFilter">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
-                                </state>
-                            </button>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Jat-N9-0ix" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0kz-Ey-w5u"/>
-                            <constraint firstItem="SCE-Ta-H18" firstAttribute="top" secondItem="Jat-N9-0ix" secondAttribute="bottom" id="EhY-kh-X3G"/>
-                            <constraint firstItem="SCE-Ta-H18" firstAttribute="leading" secondItem="dCQ-gy-tgP" secondAttribute="trailing" constant="10" id="Naq-S9-bIk"/>
-                            <constraint firstItem="dCQ-gy-tgP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="aqG-si-EQe"/>
-                            <constraint firstItem="Jat-N9-0ix" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bct-ha-ciD"/>
-                            <constraint firstItem="dCQ-gy-tgP" firstAttribute="top" secondItem="Jat-N9-0ix" secondAttribute="bottom" id="hZW-ar-OtF"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jat-N9-0ix" secondAttribute="trailing" constant="16" id="pWL-wF-aHO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SCE-Ta-H18" secondAttribute="trailing" constant="16" id="rOJ-Jd-vKN"/>
+                            <constraint firstItem="dCQ-gy-tgP" firstAttribute="top" secondItem="Jat-N9-0ix" secondAttribute="bottom" constant="10" id="H05-KH-Mws"/>
+                            <constraint firstItem="dCQ-gy-tgP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="JBz-YU-K3V"/>
+                            <constraint firstItem="wli-nf-7XT" firstAttribute="leading" secondItem="dCQ-gy-tgP" secondAttribute="trailing" constant="10" id="Qnv-JX-FUq"/>
+                            <constraint firstItem="Jat-N9-0ix" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="d9k-3d-tAr"/>
+                            <constraint firstItem="wli-nf-7XT" firstAttribute="centerY" secondItem="dCQ-gy-tgP" secondAttribute="centerY" id="eNA-mM-kv2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wli-nf-7XT" secondAttribute="trailing" constant="16" id="eRF-QY-DmK"/>
+                            <constraint firstItem="Jat-N9-0ix" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fE3-JN-zOc"/>
+                            <constraint firstItem="Jat-N9-0ix" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="r7X-qF-n8q"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="headerView" destination="Jat-N9-0ix" id="CgL-YL-7GX"/>
                         <outlet property="searchBar" destination="dCQ-gy-tgP" id="MOh-0I-eYV"/>
-                        <outlet property="sliderButton" destination="SCE-Ta-H18" id="3zj-xz-zPN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="79.710144927536234" y="116.51785714285714"/>
+            <point key="canvasLocation" x="78.75" y="116.19718309859155"/>
         </scene>
     </scenes>
     <resources>
-        <image name="buttonFilter" width="56" height="44"/>
+        <image name="filterButton" width="56" height="44"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -10,7 +10,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderView" customModule="doct24_ios" customModuleProvider="target">
             <connections>
-                <outlet property="countryButton" destination="UK7-1a-p3L" id="2FK-Y4-hRd"/>
                 <outlet property="view" destination="iN0-l3-epB" id="4AG-8b-gIF"/>
             </connections>
         </placeholder>
@@ -26,17 +25,19 @@
                         <constraint firstAttribute="height" constant="50" id="ZC9-e3-S27"/>
                     </constraints>
                 </imageView>
-                <button verifyAmbiguity="off" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UK7-1a-p3L">
-                    <rect key="frame" x="328" y="16" width="70" height="30"/>
-                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" image="flagButton"/>
-                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flagButton" translatesAutoresizingMaskIntoConstraints="NO" id="N3z-Ic-OgT">
+                    <rect key="frame" x="333" y="3" width="65" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="4lU-J1-dIh"/>
+                        <constraint firstAttribute="width" constant="65" id="rgB-pZ-S3s"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <constraints>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="UK7-1a-p3L" secondAttribute="trailing" constant="16" id="KtB-Nv-sXR"/>
+                <constraint firstItem="N3z-Ic-OgT" firstAttribute="centerY" secondItem="UsQ-Jc-qAP" secondAttribute="centerY" id="NSm-xB-YBN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="N3z-Ic-OgT" secondAttribute="trailing" constant="16" id="TUf-4c-HZB"/>
                 <constraint firstItem="UsQ-Jc-qAP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Xdh-zU-cBk"/>
-                <constraint firstItem="UK7-1a-p3L" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="vlx-Rz-THT"/>
                 <constraint firstItem="UsQ-Jc-qAP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="zzS-vo-thU"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
