@@ -31,6 +31,10 @@
 		20223AEE27550AA6009E5864 /* RecoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20223AED27550AA6009E5864 /* RecoverViewController.swift */; };
 		20223AF027551033009E5864 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20223AEF27551033009E5864 /* HeaderView.xib */; };
 		20223AF22755116B009E5864 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20223AF12755116B009E5864 /* HeaderView.swift */; };
+		2041728B2757AC3100B0E9B9 /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 204172882757AC3100B0E9B9 /* Rubik-Light.ttf */; };
+		2041728C2757AC3100B0E9B9 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 204172892757AC3100B0E9B9 /* Rubik-Medium.ttf */; };
+		2041728D2757AC3100B0E9B9 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2041728A2757AC3100B0E9B9 /* Rubik-Regular.ttf */; };
+		2041728F2757AE1F00B0E9B9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2041728E2757AE1F00B0E9B9 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +83,10 @@
 		20223AED27550AA6009E5864 /* RecoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverViewController.swift; sourceTree = "<group>"; };
 		20223AEF27551033009E5864 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		20223AF12755116B009E5864 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		204172882757AC3100B0E9B9 /* Rubik-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Light.ttf"; sourceTree = "<group>"; };
+		204172892757AC3100B0E9B9 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
+		2041728A2757AC3100B0E9B9 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		2041728E2757AE1F00B0E9B9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +137,7 @@
 		20223A9D275500FE009E5864 /* doct24_ios */ = {
 			isa = PBXGroup;
 			children = (
+				204172872757AC0600B0E9B9 /* Fonts */,
 				20223AD3275503C5009E5864 /* DataBase */,
 				20223AD2275503B8009E5864 /* Core */,
 				20223AD1275502B0009E5864 /* System */,
@@ -203,6 +212,7 @@
 				20223AD7275504EA009E5864 /* UIWindow+keyWindow.swift */,
 				20223AD92755050E009E5864 /* BaseCoordinator.swift */,
 				20223ADB2755053B009E5864 /* UIStoryboard+Instantiate.swift */,
+				2041728E2757AE1F00B0E9B9 /* Constants.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -233,6 +243,16 @@
 				207675C7275657CF00AF0286 /* Header */,
 			);
 			path = CustomView;
+			sourceTree = "<group>";
+		};
+		204172872757AC0600B0E9B9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				204172882757AC3100B0E9B9 /* Rubik-Light.ttf */,
+				204172892757AC3100B0E9B9 /* Rubik-Medium.ttf */,
+				2041728A2757AC3100B0E9B9 /* Rubik-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		207675C7275657CF00AF0286 /* Header */ = {
@@ -349,10 +369,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				20223AE6275509D1009E5864 /* Auth.storyboard in Resources */,
+				2041728D2757AC3100B0E9B9 /* Rubik-Regular.ttf in Resources */,
+				2041728B2757AC3100B0E9B9 /* Rubik-Light.ttf in Resources */,
 				20223AF027551033009E5864 /* HeaderView.xib in Resources */,
 				20223AAB27550100009E5864 /* LaunchScreen.storyboard in Resources */,
 				20223AA827550100009E5864 /* Assets.xcassets in Resources */,
 				20223AA6275500FE009E5864 /* Main.storyboard in Resources */,
+				2041728C2757AC3100B0E9B9 /* Rubik-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +401,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20223AE0275505BD009E5864 /* UserManager.swift in Sources */,
+				2041728F2757AE1F00B0E9B9 /* Constants.swift in Sources */,
 				20223AEA27550A14009E5864 /* AuthCoordinator.swift in Sources */,
 				20223AD8275504EA009E5864 /* UIWindow+keyWindow.swift in Sources */,
 				20223ADA2755050E009E5864 /* BaseCoordinator.swift in Sources */,
