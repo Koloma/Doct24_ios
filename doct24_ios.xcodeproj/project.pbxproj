@@ -35,6 +35,8 @@
 		2041728C2757AC3100B0E9B9 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 204172892757AC3100B0E9B9 /* Rubik-Medium.ttf */; };
 		2041728D2757AC3100B0E9B9 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2041728A2757AC3100B0E9B9 /* Rubik-Regular.ttf */; };
 		2041728F2757AE1F00B0E9B9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2041728E2757AE1F00B0E9B9 /* Constants.swift */; };
+		204172982757D5C400B0E9B9 /* DoctorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204172962757D5C400B0E9B9 /* DoctorCollectionViewCell.swift */; };
+		204172992757D5C400B0E9B9 /* DoctorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 204172972757D5C400B0E9B9 /* DoctorCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,8 @@
 		204172892757AC3100B0E9B9 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
 		2041728A2757AC3100B0E9B9 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
 		2041728E2757AE1F00B0E9B9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		204172962757D5C400B0E9B9 /* DoctorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorCollectionViewCell.swift; sourceTree = "<group>"; };
+		204172972757D5C400B0E9B9 /* DoctorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoctorCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +193,7 @@
 		20223AD0275502A3009E5864 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				204172952757D58200B0E9B9 /* CollectionViewCell */,
 				20223AA2275500FE009E5864 /* MainViewController.swift */,
 				20223AA4275500FE009E5864 /* Main.storyboard */,
 				20223AE327550830009E5864 /* MainCoordinator.swift */,
@@ -253,6 +258,15 @@
 				2041728A2757AC3100B0E9B9 /* Rubik-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		204172952757D58200B0E9B9 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				204172962757D5C400B0E9B9 /* DoctorCollectionViewCell.swift */,
+				204172972757D5C400B0E9B9 /* DoctorCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 		207675C7275657CF00AF0286 /* Header */ = {
@@ -368,6 +382,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				204172992757D5C400B0E9B9 /* DoctorCollectionViewCell.xib in Resources */,
 				20223AE6275509D1009E5864 /* Auth.storyboard in Resources */,
 				2041728D2757AC3100B0E9B9 /* Rubik-Regular.ttf in Resources */,
 				2041728B2757AC3100B0E9B9 /* Rubik-Light.ttf in Resources */,
@@ -413,6 +428,7 @@
 				20223AE427550830009E5864 /* MainCoordinator.swift in Sources */,
 				20223ADE27550588009E5864 /* AppCoordinator.swift in Sources */,
 				20223AA1275500FE009E5864 /* SceneDelegate.swift in Sources */,
+				204172982757D5C400B0E9B9 /* DoctorCollectionViewCell.swift in Sources */,
 				20223AD6275504BF009E5864 /* BaseRouter.swift in Sources */,
 				20223AE227550623009E5864 /* User.swift in Sources */,
 				20223ADC2755053B009E5864 /* UIStoryboard+Instantiate.swift in Sources */,

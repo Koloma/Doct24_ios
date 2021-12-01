@@ -12,39 +12,48 @@ class MainViewController: UIViewController {
     @IBOutlet weak var headerView: HeaderView!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var midleView: UIView!
+    @IBOutlet weak var headerMidleLable: UILabel!
+    @IBOutlet weak var collectionView: UICollectionView!
+
+    private var docImages:[UIImage?] = [ UIImage(named: "doctor0")
+                                         ,UIImage(named: "doctor1")
+                                         ,UIImage(named: "doctor2")
+                                         ,UIImage(named: "doctor0")
+                                         ,UIImage(named: "doctor1")
+                                         ,UIImage(named: "doctor2")
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupView()
+
+        collectionView.register(UINib(nibName: "DoctorCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "DoctorCollectionViewCell")
+        collectionView.dataSource = self
+        collectionView.delegate = self
     }
 
     func setupView() {
         
-        addTextLable()
+        headerMidleLable.textColor = Const.Colors.Main
 
     }
 
-
-    func addTextLable() {
-
-        let lable = UILabel()
-        lable.frame = CGRect(x: 0, y: 0, width: 202, height: 28)
-        lable.backgroundColor = .white
-
-        lable.textColor = UIColor(red: 0.024, green: 0.655, blue: 0.702, alpha: 1)
-        lable.font = UIFont(name: "Rubik-Medium", size: 28)
-
-        lable.text = "Лучшие врачи"
-
-        let parent = midleView!
-        parent.addSubview(lable)
-        lable.translatesAutoresizingMaskIntoConstraints = false
-        lable.widthAnchor.constraint(equalToConstant: 202).isActive = true
-        lable.heightAnchor.constraint(equalToConstant: 28).isActive = true
-        lable.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 86).isActive = true
-        lable.topAnchor.constraint(equalTo: parent.topAnchor, constant: 277).isActive = true
-
-    }
 }
 
+extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        docImages.count
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DoctorCollectionViewCell", for: indexPath) as? DoctorCollectionViewCell {
+            cell.setup(image: docImages[indexPath.row], text: "")
+            return cell
+        }
+        return UICollectionViewCell()
+    }
+
+
+}
