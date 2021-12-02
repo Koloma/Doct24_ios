@@ -12,9 +12,12 @@
         <array key="Rubik-Medium.ttf">
             <string>Rubik-Medium</string>
         </array>
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
     </customFonts>
     <scenes>
-        <!--Главная-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="doct24_ios" customModuleProvider="target" sceneMemberID="viewController">
@@ -45,7 +48,7 @@
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gES-aT-iX5">
-                                <rect key="frame" x="0.0" y="210" width="320" height="200"/>
+                                <rect key="frame" x="0.0" y="232" width="320" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Лучшие врачи" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Q1-46-8O7">
                                         <rect key="frame" x="61" y="0.0" width="198.5" height="33.5"/>
@@ -76,11 +79,81 @@
                                     <constraint firstAttribute="trailing" secondItem="8fm-s7-RwB" secondAttribute="trailing" id="zG7-HU-PxY"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E3F-nK-ztB" userLabel="Big Button View">
-                                <rect key="frame" x="0.0" y="120" width="320" height="90"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E3F-nK-ztB" userLabel="Big Button Container View">
+                                <rect key="frame" x="0.0" y="120" width="320" height="112"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="pz9-RR-5B6">
+                                        <rect key="frame" x="16" y="16" width="288" height="80"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tfa-zM-IGg" userLabel="bigLableLeft" customClass="ShadowView" customModule="doct24_ios" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="137" height="80"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Как работает Доктор24" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnD-Om-2ra">
+                                                        <rect key="frame" x="10" y="0.0" width="99" height="80"/>
+                                                        <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pb0-OD-BLs">
+                                                        <rect key="frame" x="109" y="0.0" width="18" height="80"/>
+                                                        <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="72"/>
+                                                        <color key="textColor" red="0.58267325160000005" green="0.76606208090000005" blue="0.78060227630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="PnD-Om-2ra" firstAttribute="top" secondItem="Tfa-zM-IGg" secondAttribute="top" id="0Xa-Cl-SG8"/>
+                                                    <constraint firstAttribute="bottom" secondItem="PnD-Om-2ra" secondAttribute="bottom" id="9aU-Ju-ByA"/>
+                                                    <constraint firstItem="Pb0-OD-BLs" firstAttribute="leading" secondItem="PnD-Om-2ra" secondAttribute="trailing" id="9h3-to-ZeV"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Pb0-OD-BLs" secondAttribute="trailing" constant="10" id="B0q-mj-blK"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Pb0-OD-BLs" secondAttribute="bottom" id="KDZ-T5-XiA"/>
+                                                    <constraint firstItem="PnD-Om-2ra" firstAttribute="leading" secondItem="Tfa-zM-IGg" secondAttribute="leading" constant="10" id="jqx-qt-1hD"/>
+                                                    <constraint firstItem="Pb0-OD-BLs" firstAttribute="top" secondItem="Tfa-zM-IGg" secondAttribute="top" id="xpc-xY-3wI"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TCJ-xE-egR" userLabel="bigLableRight" customClass="ShadowView" customModule="doct24_ios" customModuleProvider="target">
+                                                <rect key="frame" x="151" y="0.0" width="137" height="80"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Задать вопрос" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fq-LC-erg">
+                                                        <rect key="frame" x="10" y="0.0" width="78.5" height="80"/>
+                                                        <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEL-Mv-5ly">
+                                                        <rect key="frame" x="88.5" y="0.0" width="38.5" height="80"/>
+                                                        <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="72"/>
+                                                        <color key="textColor" red="0.58267325160000005" green="0.76606208090000005" blue="0.78060227630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="1fq-LC-erg" firstAttribute="centerY" secondItem="TCJ-xE-egR" secondAttribute="centerY" id="08j-rc-pEa"/>
+                                                    <constraint firstAttribute="bottom" secondItem="vEL-Mv-5ly" secondAttribute="bottom" id="3Us-fk-aO9"/>
+                                                    <constraint firstAttribute="bottom" secondItem="1fq-LC-erg" secondAttribute="bottom" id="Bf2-WV-tlq"/>
+                                                    <constraint firstItem="1fq-LC-erg" firstAttribute="top" secondItem="TCJ-xE-egR" secondAttribute="top" id="EB1-lI-hyb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="vEL-Mv-5ly" secondAttribute="trailing" constant="10" id="XJ2-yc-VxJ"/>
+                                                    <constraint firstItem="vEL-Mv-5ly" firstAttribute="leading" secondItem="1fq-LC-erg" secondAttribute="trailing" id="iAz-B8-fSe"/>
+                                                    <constraint firstItem="1fq-LC-erg" firstAttribute="leading" secondItem="TCJ-xE-egR" secondAttribute="leading" constant="10" id="nsc-ph-Qcn"/>
+                                                    <constraint firstItem="vEL-Mv-5ly" firstAttribute="top" secondItem="TCJ-xE-egR" secondAttribute="top" id="qDA-ta-cui"/>
+                                                    <constraint firstItem="vEL-Mv-5ly" firstAttribute="centerY" secondItem="TCJ-xE-egR" secondAttribute="centerY" id="zP3-p7-kvs"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="Ush-Qc-k9W"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="Y4A-fL-OxE"/>
+                                    <constraint firstItem="pz9-RR-5B6" firstAttribute="centerY" secondItem="E3F-nK-ztB" secondAttribute="centerY" id="7hX-16-pLD"/>
+                                    <constraint firstAttribute="bottom" secondItem="pz9-RR-5B6" secondAttribute="bottom" constant="16" id="e4d-lV-EE9"/>
+                                    <constraint firstItem="pz9-RR-5B6" firstAttribute="leading" secondItem="E3F-nK-ztB" secondAttribute="leading" constant="16" id="hEC-st-hc8"/>
+                                    <constraint firstAttribute="trailing" secondItem="pz9-RR-5B6" secondAttribute="trailing" constant="16" id="xej-Wd-G7a"/>
+                                    <constraint firstItem="pz9-RR-5B6" firstAttribute="top" secondItem="E3F-nK-ztB" secondAttribute="top" constant="16" id="yIL-42-orb"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -103,8 +176,10 @@
                             <constraint firstItem="E3F-nK-ztB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sid-A4-hcB"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Главная" image="house" catalog="system" id="7hb-8l-KV4"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="U8A-d0-7Bu"/>
+                    <navigationItem key="navigationItem" id="bj5-IW-8bH"/>
                     <connections>
+                        <outlet property="bigLableView" destination="Tfa-zM-IGg" id="tar-Ek-57e"/>
                         <outlet property="collectionView" destination="8fm-s7-RwB" id="CzQ-lf-0Hz"/>
                         <outlet property="headerMidleLable" destination="8Q1-46-8O7" id="8bT-jY-3en"/>
                         <outlet property="headerView" destination="Jat-N9-0ix" id="CgL-YL-7GX"/>
@@ -114,9 +189,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1178" y="107"/>
+            <point key="canvasLocation" x="1087.5" y="106.69014084507042"/>
         </scene>
-        <!--Консультации-->
+        <!--View Controller-->
         <scene sceneID="D42-ut-xa2">
             <objects>
                 <viewController id="5nL-IC-G15" sceneMemberID="viewController">
@@ -126,13 +201,13 @@
                         <viewLayoutGuide key="safeArea" id="C4j-jS-LNS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Консультации" image="square.and.pencil" catalog="system" id="Q9O-sj-kz6"/>
+                    <navigationItem key="navigationItem" id="2pq-pz-uIn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RnU-Ta-DGp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1089" y="883"/>
+            <point key="canvasLocation" x="2085" y="882.04225352112678"/>
         </scene>
-        <!--Врачи-->
+        <!--View Controller-->
         <scene sceneID="Khg-WC-i7q">
             <objects>
                 <viewController id="koO-At-0p8" sceneMemberID="viewController">
@@ -142,13 +217,13 @@
                         <viewLayoutGuide key="safeArea" id="X8p-eX-Lpx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Врачи" selectedImage="person" catalog="system" id="QH9-GR-E8e"/>
+                    <navigationItem key="navigationItem" id="fgV-ZE-av4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sSv-Il-L8e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="-601"/>
+            <point key="canvasLocation" x="2071.875" y="-601.05633802816897"/>
         </scene>
-        <!--Профиль-->
+        <!--View Controller-->
         <scene sceneID="kX3-6H-RWa">
             <objects>
                 <viewController id="yDm-fc-LQA" sceneMemberID="viewController">
@@ -158,11 +233,11 @@
                         <viewLayoutGuide key="safeArea" id="Mj1-yN-UaC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Профиль" image="person.3" catalog="system" id="Rix-p9-tR7"/>
+                    <navigationItem key="navigationItem" id="pKD-Iz-zyf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="329-px-soG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1074" y="1645"/>
+            <point key="canvasLocation" x="2070" y="1644.7183098591549"/>
         </scene>
         <!--cvbcvbcv bc vcb -->
         <scene sceneID="nZc-qR-Fut">
@@ -170,19 +245,77 @@
                 <tabBarController title="cvbcvbcv bc vcb " automaticallyAdjustsScrollViewInsets="NO" id="NIS-PI-rQD" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="C3S-05-OzP">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="V32-Ib-qdr"/>
-                        <segue destination="koO-At-0p8" kind="relationship" relationship="viewControllers" id="UYA-sC-R2D"/>
-                        <segue destination="5nL-IC-G15" kind="relationship" relationship="viewControllers" id="gCM-3l-BaM"/>
-                        <segue destination="yDm-fc-LQA" kind="relationship" relationship="viewControllers" id="wxl-qk-RzY"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="gsX-oC-BFc"/>
+                        <segue destination="SN7-7P-Tc2" kind="relationship" relationship="viewControllers" id="UYA-sC-R2D"/>
+                        <segue destination="BLK-qV-qGM" kind="relationship" relationship="viewControllers" id="gCM-3l-BaM"/>
+                        <segue destination="hVw-2a-c9d" kind="relationship" relationship="viewControllers" id="wxl-qk-RzY"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Id4-MV-dVB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="163" y="107"/>
+        </scene>
+        <!--Врачи-->
+        <scene sceneID="zSV-3I-cbD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SN7-7P-Tc2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Врачи" selectedImage="person" catalog="system" id="QH9-GR-E8e"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Yyg-Km-gXy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="koO-At-0p8" kind="relationship" relationship="rootViewController" id="hKs-KP-Fby"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y25-Bm-LBh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1074.375" y="-601.05633802816897"/>
+        </scene>
+        <!--Консультации-->
+        <scene sceneID="QPf-nR-EcG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BLK-qV-qGM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Консультации" image="square.and.pencil" catalog="system" id="Q9O-sj-kz6"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jxl-gq-0jM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5nL-IC-G15" kind="relationship" relationship="rootViewController" id="p3e-q6-R6l"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oov-LV-ChL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1087.5" y="882.04225352112678"/>
+        </scene>
+        <!--Профиль-->
+        <scene sceneID="TlZ-kn-85y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hVw-2a-c9d" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Профиль" image="person.3" catalog="system" id="Rix-p9-tR7"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aGF-Tt-M7R">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yDm-fc-LQA" kind="relationship" relationship="rootViewController" id="Eo6-Mu-jWF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nrZ-tp-hkm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1072.5" y="1644.7183098591549"/>
         </scene>
     </scenes>
     <resources>

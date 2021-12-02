@@ -37,6 +37,7 @@
 		2041728F2757AE1F00B0E9B9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2041728E2757AE1F00B0E9B9 /* Constants.swift */; };
 		204172982757D5C400B0E9B9 /* DoctorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204172962757D5C400B0E9B9 /* DoctorCollectionViewCell.swift */; };
 		204172992757D5C400B0E9B9 /* DoctorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 204172972757D5C400B0E9B9 /* DoctorCollectionViewCell.xib */; };
+		204B98CF27591BC800F4FC66 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204B98CE27591BC800F4FC66 /* ShadowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		2041728E2757AE1F00B0E9B9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		204172962757D5C400B0E9B9 /* DoctorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorCollectionViewCell.swift; sourceTree = "<group>"; };
 		204172972757D5C400B0E9B9 /* DoctorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoctorCollectionViewCell.xib; sourceTree = "<group>"; };
+		204B98CE27591BC800F4FC66 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 		20223A9D275500FE009E5864 /* doct24_ios */ = {
 			isa = PBXGroup;
 			children = (
+				204B98CD27591AD500F4FC66 /* CustomElements */,
 				204172872757AC0600B0E9B9 /* Fonts */,
 				20223AD3275503C5009E5864 /* DataBase */,
 				20223AD2275503B8009E5864 /* Core */,
@@ -267,6 +270,14 @@
 				204172972757D5C400B0E9B9 /* DoctorCollectionViewCell.xib */,
 			);
 			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		204B98CD27591AD500F4FC66 /* CustomElements */ = {
+			isa = PBXGroup;
+			children = (
+				204B98CE27591BC800F4FC66 /* ShadowView.swift */,
+			);
+			path = CustomElements;
 			sourceTree = "<group>";
 		};
 		207675C7275657CF00AF0286 /* Header */ = {
@@ -432,6 +443,7 @@
 				20223AD6275504BF009E5864 /* BaseRouter.swift in Sources */,
 				20223AE227550623009E5864 /* User.swift in Sources */,
 				20223ADC2755053B009E5864 /* UIStoryboard+Instantiate.swift in Sources */,
+				204B98CF27591BC800F4FC66 /* ShadowView.swift in Sources */,
 				20223AF22755116B009E5864 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

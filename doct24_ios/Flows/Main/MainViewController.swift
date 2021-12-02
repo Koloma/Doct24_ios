@@ -14,6 +14,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var midleView: UIView!
     @IBOutlet weak var headerMidleLable: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var bigLableView: ShadowView!
 
     private var docImages:[UIImage?] = [ UIImage(named: "doctor0")
                                          ,UIImage(named: "doctor1")
@@ -36,7 +37,6 @@ class MainViewController: UIViewController {
     func setupView() {
         
         headerMidleLable.textColor = Const.Colors.Main
-
     }
 
 }
@@ -44,7 +44,7 @@ class MainViewController: UIViewController {
 extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        docImages.count
+        return docImages.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

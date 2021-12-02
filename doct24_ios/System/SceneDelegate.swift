@@ -11,15 +11,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-    let appCoordinator = AppCoordinator()
-    let appDelegate = UIApplication.shared.delegate as? AppDelegate
+  //  let appCoordinator = AppCoordinator()
+//    let appDelegate = UIApplication.shared.delegate as? AppDelegate
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 
         guard let _ = (scene as? UIWindowScene) else { return }
-        self.window = (scene as? UIWindowScene).map(UIWindow.init(windowScene:))
-        self.window?.makeKeyAndVisible()
-        appCoordinator.start()
+//        self.window = (scene as? UIWindowScene).map(UIWindow.init(windowScene:))
+//        self.window?.makeKeyAndVisible()
+//        appCoordinator.start()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

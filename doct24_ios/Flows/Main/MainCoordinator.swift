@@ -21,27 +21,29 @@ final class MainCoordinator: BaseCoordinator {
         super.init()
     }
 
-    override func start() {
-        let viewController = UIStoryboard(name: "Main", bundle: nil)
-            .instantiateViewController(MainViewController.self)
-
-//        viewController.onLogout = { [weak self] in
-//            self?.onLogout?()
-//        }
+//    override func start() {
+//        let viewController = UIStoryboard(name: "Main", bundle: nil)
+//            .instantiateViewController(MainViewController.self)
 //
-//        viewController.onShowMap = { [weak self] in
-//            self?.showMap()
-//        }
-
-//        if let username = username {
-//            viewController.userName = "Hello, \(username)"
-//        } else {
-//            viewController.userName = nil
-//        }
-
-        let navController = UINavigationController(rootViewController: viewController)
-        setAsRoot(navController)
-        self.navigationController = navController
-    }
+////        viewController.onLogout = { [weak self] in
+////            self?.onLogout?()
+////        }
+////
+////        viewController.onShowMap = { [weak self] in
+////            self?.showMap()
+////        }
+//
+////        if let username = username {
+////            viewController.userName = "Hello, \(username)"
+////        } else {
+////            viewController.userName = nil
+////        }
+//
+//
+//        let navController = UINavigationController(rootViewController: viewController)
+//        let tabBarController = UITabBarController(
+//        setAsRoot(navController)
+//        self.navigationController = navController
+//    }
 
 }
