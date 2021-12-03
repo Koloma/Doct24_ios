@@ -15,7 +15,6 @@ class MainViewController: UIViewController {
     @IBOutlet weak var headerMidleLable: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var bigLableView: ShadowView!
-    @IBOutlet weak var eventsLable: UILabel!
 
     private var docImages:[UIImage?] = [ UIImage(named: "doctor0")
                                          ,UIImage(named: "doctor1")
@@ -36,7 +35,6 @@ class MainViewController: UIViewController {
     func setupView() {
         
         headerMidleLable.textColor = Const.Colors.Main
-        eventsLable.textColor = Const.Colors.Main
 
         collectionView.register(UINib(nibName: "DoctorCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "DoctorCollectionViewCell")
         collectionView.dataSource = self
