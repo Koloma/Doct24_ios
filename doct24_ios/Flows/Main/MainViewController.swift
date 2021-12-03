@@ -46,6 +46,7 @@ class MainViewController: UIViewController {
         appearance.setTitleTextAttributes(attributes as [NSAttributedString.Key : Any], for: .normal)
         tabBarController?.tabBar.tintColor = Const.Colors.MainGreen
 
+        searchBar.backgroundImage = UIImage()
 
     }
 
