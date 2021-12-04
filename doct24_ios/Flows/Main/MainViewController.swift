@@ -33,7 +33,7 @@ class MainViewController: UIViewController {
     }
 
     func setupView() {
-        
+        self.setupToHideKeyboardOnTapOnView()
         headerMidleLable.textColor = Const.Colors.Main
 
         collectionView.register(UINib(nibName: "DoctorCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "DoctorCollectionViewCell")

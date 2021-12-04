@@ -326,10 +326,10 @@
             </objects>
             <point key="canvasLocation" x="1086.448598130841" y="106.26349892008641"/>
         </scene>
-        <!--Auth-->
+        <!--Profile-->
         <scene sceneID="PGG-Wr-1iG">
             <objects>
-                <viewControllerPlaceholder storyboardName="Auth" id="Xtx-yc-nwd" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Profile" id="Xtx-yc-nwd" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="nab-aB-Hpe"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x15-HU-0ZZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -378,10 +378,10 @@
             </objects>
             <point key="canvasLocation" x="1074.375" y="-601.05633802816897"/>
         </scene>
-        <!--Auth-->
+        <!--Doctors-->
         <scene sceneID="IJk-kE-14b">
             <objects>
-                <viewControllerPlaceholder storyboardName="Auth" id="jyP-q4-f9q" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Doctors" id="jyP-q4-f9q" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="FVw-Gu-W1T"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YSK-em-x8q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -430,10 +430,10 @@
             </objects>
             <point key="canvasLocation" x="1072.5" y="1644.7183098591549"/>
         </scene>
-        <!--Auth-->
+        <!--Consultations-->
         <scene sceneID="CED-U2-7XT">
             <objects>
-                <viewControllerPlaceholder storyboardName="Auth" id="I9s-1j-hot" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Consultations" id="I9s-1j-hot" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="gPc-Pl-nkm"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bg7-Be-mC1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
