@@ -28,25 +28,16 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
 
         setupView()
-
-
     }
 
     func setupView() {
         self.setupToHideKeyboardOnTapOnView()
+
         headerMidleLable.textColor = Const.Colors.Main
 
         collectionView.register(UINib(nibName: "DoctorCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "DoctorCollectionViewCell")
         collectionView.dataSource = self
         collectionView.delegate = self
-
-
-        let appearance = UITabBarItem.appearance()
-        let attributes = [NSAttributedString.Key.font:UIFont(name: "Rubik-Regular", size: 11)]
-        appearance.setTitleTextAttributes(attributes as [NSAttributedString.Key : Any], for: .normal)
-        tabBarController?.tabBar.tintColor = Const.Colors.MainGreen
-
-        searchBar.backgroundImage = UIImage()
 
     }
 
@@ -65,6 +56,5 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         }
         return UICollectionViewCell()
     }
-
 
 }

@@ -25,7 +25,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" horizontalHuggingPriority="240" placeholder="Поиск" translatesAutoresizingMaskIntoConstraints="NO" id="dCQ-gy-tgP">
+                            <searchBar contentMode="redraw" horizontalHuggingPriority="240" placeholder="Поиск" translatesAutoresizingMaskIntoConstraints="NO" id="dCQ-gy-tgP" customClass="CustomSearchBar" customModule="doct24_ios" customModuleProvider="target">
                                 <rect key="frame" x="16" y="114" width="396" height="51"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
@@ -40,13 +40,13 @@
                                 <rect key="frame" x="0.0" y="277" width="428" height="180"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Лучшие врачи" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Q1-46-8O7">
-                                        <rect key="frame" x="114.66666666666667" y="0.0" width="198.66666666666663" height="33.333333333333336"/>
+                                        <rect key="frame" x="121" y="0.0" width="186" height="32.666666666666664"/>
                                         <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8fm-s7-RwB">
-                                        <rect key="frame" x="0.0" y="33.333333333333314" width="428" height="146.66666666666666"/>
+                                        <rect key="frame" x="0.0" y="32.666666666666686" width="428" height="147.33333333333334"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6NM-ff-Vzn">
                                             <size key="itemSize" width="128" height="128"/>
@@ -78,13 +78,13 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="191" height="80"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Как работает Доктор24" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnD-Om-2ra">
-                                                        <rect key="frame" x="10" y="0.0" width="153.33333333333334" height="80"/>
+                                                        <rect key="frame" x="10" y="0.0" width="152.33333333333334" height="80"/>
                                                         <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="16"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pb0-OD-BLs">
-                                                        <rect key="frame" x="163.33333333333334" y="0.0" width="17.666666666666657" height="80"/>
+                                                        <rect key="frame" x="162.33333333333334" y="0.0" width="18.666666666666657" height="80"/>
                                                         <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="72"/>
                                                         <color key="textColor" red="0.58267325160000005" green="0.76606208090000005" blue="0.78060227630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -105,13 +105,13 @@
                                                 <rect key="frame" x="205" y="0.0" width="191" height="80"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Задать вопрос" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fq-LC-erg">
-                                                        <rect key="frame" x="10" y="0.0" width="132.66666666666666" height="80"/>
+                                                        <rect key="frame" x="10" y="0.0" width="130.66666666666666" height="80"/>
                                                         <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="16"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEL-Mv-5ly">
-                                                        <rect key="frame" x="142.66666666666669" y="0.0" width="38.333333333333343" height="80"/>
+                                                        <rect key="frame" x="140.66666666666669" y="0.0" width="40.333333333333343" height="80"/>
                                                         <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="72"/>
                                                         <color key="textColor" red="0.58267325160000005" green="0.76606208090000005" blue="0.78060227630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -162,7 +162,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ведите свою медецинскую карту" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Aeb-lr-dMQ">
-                                                        <rect key="frame" x="15" y="15" width="135.33333333333334" height="33.333333333333336"/>
+                                                        <rect key="frame" x="15" y="15" width="130" height="32.666666666666664"/>
                                                         <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="14"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -181,7 +181,7 @@
                                                 <rect key="frame" x="205" y="0.0" width="191" height="114"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фиксируйте показатели своего самочувствия" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ogh-YU-9vK">
-                                                        <rect key="frame" x="15" y="15" width="154" height="50"/>
+                                                        <rect key="frame" x="15" y="15" width="154" height="49"/>
                                                         <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="14"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -232,7 +232,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Контролируйте прием назначенных вам лекарств" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="d00-W5-DzM">
-                                                        <rect key="frame" x="15" y="15" width="138" height="50"/>
+                                                        <rect key="frame" x="15" y="15" width="134.66666666666666" height="49"/>
                                                         <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="14"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -251,7 +251,7 @@
                                                 <rect key="frame" x="205" y="0.0" width="191" height="114"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Общайтесь со своими любимыми врачами" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfN-1o-37T">
-                                                        <rect key="frame" x="15" y="15" width="154" height="33.333333333333336"/>
+                                                        <rect key="frame" x="15" y="15" width="154" height="32.666666666666664"/>
                                                         <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="14"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -341,7 +341,7 @@
             <objects>
                 <tabBarController title="cvbcvbcv bc vcb " automaticallyAdjustsScrollViewInsets="NO" id="NIS-PI-rQD" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="C3S-05-OzP">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="C3S-05-OzP" customClass="CustomTabBar" customModule="doct24_ios" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

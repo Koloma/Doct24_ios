@@ -45,6 +45,8 @@
 		20508556275B49F10014AEA1 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20508555275B49F10014AEA1 /* Profile.storyboard */; };
 		20508558275B4A010014AEA1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20508557275B4A010014AEA1 /* ProfileViewController.swift */; };
 		2050855B275B4BAD0014AEA1 /* UIViewController+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050855A275B4BAD0014AEA1 /* UIViewController+ext.swift */; };
+		2050855D275B4C580014AEA1 /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050855C275B4C580014AEA1 /* CustomSearchBar.swift */; };
+		2050855F275B4D550014AEA1 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050855E275B4D550014AEA1 /* CustomTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +109,8 @@
 		20508555275B49F10014AEA1 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		20508557275B4A010014AEA1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		2050855A275B4BAD0014AEA1 /* UIViewController+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ext.swift"; sourceTree = "<group>"; };
+		2050855C275B4C580014AEA1 /* CustomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
+		2050855E275B4D550014AEA1 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,6 +290,8 @@
 			children = (
 				207675C7275657CF00AF0286 /* Header */,
 				204B98CE27591BC800F4FC66 /* ShadowView.swift */,
+				2050855C275B4C580014AEA1 /* CustomSearchBar.swift */,
+				2050855E275B4D550014AEA1 /* CustomTabBar.swift */,
 			);
 			path = CustomElements;
 			sourceTree = "<group>";
@@ -495,6 +501,8 @@
 				20223AD6275504BF009E5864 /* BaseRouter.swift in Sources */,
 				20223AE227550623009E5864 /* User.swift in Sources */,
 				20223ADC2755053B009E5864 /* UIStoryboard+Instantiate.swift in Sources */,
+				2050855F275B4D550014AEA1 /* CustomTabBar.swift in Sources */,
+				2050855D275B4C580014AEA1 /* CustomSearchBar.swift in Sources */,
 				204B98CF27591BC800F4FC66 /* ShadowView.swift in Sources */,
 				20223AF22755116B009E5864 /* HeaderView.swift in Sources */,
 			);
