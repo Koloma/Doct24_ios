@@ -11,15 +11,15 @@ class CustomSearchBar: UISearchBar {
 
     override init(frame: CGRect) {
         super .init(frame: frame)
-
-        backgroundImage = UIImage()
-
+        setup()
     }
 
     required init?(coder: NSCoder) {
         super .init(coder: coder)
-        
-        backgroundImage = UIImage()
+        setup()
     }
 
+    func setup() {
+        backgroundImage = UIImage()
+    }
 }
