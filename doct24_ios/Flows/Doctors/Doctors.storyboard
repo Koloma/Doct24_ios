@@ -37,11 +37,11 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="508"/>
                                         <subviews>
                                             <searchBar contentMode="redraw" horizontalHuggingPriority="240" placeholder="Поиск" translatesAutoresizingMaskIntoConstraints="NO" id="I8Y-Hg-b1h" customClass="CustomSearchBar" customModule="doct24_ios" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
+                                                <rect key="frame" x="16" y="10" width="288" height="51"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </searchBar>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qvQ-zf-GKY">
-                                                <rect key="frame" x="20" y="67" width="280" height="340"/>
+                                                <rect key="frame" x="20" y="77" width="280" height="340"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bxs-GM-Gt9" userLabel="View Child" customClass="ShadowView" customModule="doct24_ios" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="280" height="110"/>
@@ -127,10 +127,9 @@
                                             <constraint firstAttribute="trailing" secondItem="qvQ-zf-GKY" secondAttribute="trailing" constant="20" symbolic="YES" id="5Mn-4P-fJS"/>
                                             <constraint firstItem="qvQ-zf-GKY" firstAttribute="leading" secondItem="Tj9-Cg-7le" secondAttribute="leading" constant="20" symbolic="YES" id="8bf-Mx-hFd"/>
                                             <constraint firstItem="qvQ-zf-GKY" firstAttribute="top" secondItem="I8Y-Hg-b1h" secondAttribute="bottom" constant="16" id="Huc-MB-5g0"/>
-                                            <constraint firstItem="I8Y-Hg-b1h" firstAttribute="top" secondItem="Tj9-Cg-7le" secondAttribute="top" id="LxX-0Z-PzX"/>
-                                            <constraint firstItem="I8Y-Hg-b1h" firstAttribute="leading" secondItem="Tj9-Cg-7le" secondAttribute="leading" symbolic="YES" id="Wot-kb-gj9"/>
-                                            <constraint firstAttribute="trailing" secondItem="I8Y-Hg-b1h" secondAttribute="trailing" symbolic="YES" id="dDp-3g-Uu1"/>
-                                            <constraint firstItem="I8Y-Hg-b1h" firstAttribute="centerX" secondItem="Tj9-Cg-7le" secondAttribute="centerX" id="dVZ-aW-dW2"/>
+                                            <constraint firstItem="I8Y-Hg-b1h" firstAttribute="top" secondItem="Tj9-Cg-7le" secondAttribute="top" constant="10" id="LxX-0Z-PzX"/>
+                                            <constraint firstItem="I8Y-Hg-b1h" firstAttribute="leading" secondItem="Tj9-Cg-7le" secondAttribute="leading" constant="16" id="Wot-kb-gj9"/>
+                                            <constraint firstAttribute="trailing" secondItem="I8Y-Hg-b1h" secondAttribute="trailing" constant="16" id="dDp-3g-Uu1"/>
                                         </constraints>
                                     </view>
                                 </subviews>
